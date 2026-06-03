@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Red Circle Background -->
+  <circle cx="256" cy="256" r="256" fill="#e42338"/>
+
+  <!-- Stylized P Icon - White -->
+  <g fill="#ffffff" transform="translate(96, 96) scale(0.625)">
+    <!-- The stem with stepped design -->
+    <path d="M64 0 L160 0 L160 64 L128 64 L128 96 L160 96 L160 320 L96 320 L96 384 L224 384 L224 0 L256 0 L256 448 L64 448 L64 0 Z"/>
+  </g>
+</svg>

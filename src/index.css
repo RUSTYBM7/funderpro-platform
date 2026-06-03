@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@theme {
+  /* FunderPro exact background colors from funderpro.com */
+  --color-bg-primary: #0f1527;
+  --color-bg-secondary: #131b32;
+  --color-bg-tertiary: #1a243d;
+  --color-bg-card: #1c273e;
+  --color-bg-border: #263348;
+  --color-bg-dark: #171d31;
+
+  /* FunderPro exact text colors from funderpro.com */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e2f8ff;
+  --color-text-muted: #7f8bab;
+
+  /* FunderPro exact accent colors from funderpro.com */
+  --color-accent-green: #00d084;
+  --color-accent-green-hover: #00b374;
+  --color-accent-blue: #01A7E1;
+  --color-accent-blue-hover: #0192c2;
+  --color-accent-red: #e42338;
+  --color-accent-purple: #720eec;
+  --color-accent-orange: #f97316;
+  --color-accent-yellow: #eab308;
+}
+
+/* Import Gellix font from Google Fonts - exact funderpro font */
+@font-face {
+  font-family: 'Gellix';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/gellix/v2/FeV4SwhMzEeGcjZ1Xw1.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gellix';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/gellix/v2/FeV4SwhMzEeGcjZ1Xw1.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gellix';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/gellix/v2/FeV4SwhMzEeGcjZ1Xw1.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+body {
+  font-family: 'Gellix', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+}
+
+/* Custom scrollbar matching FunderPro exact styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Override Tailwind default colors for exact FunderPro consistency */
+.bg-bg-primary { background-color: var(--color-bg-primary); }
+.bg-bg-secondary { background-color: var(--color-bg-secondary); }
+.bg-bg-tertiary { background-color: var(--color-bg-tertiary); }
+.bg-bg-card { background-color: var(--color-bg-card); }
+.bg-bg-dark { background-color: var(--color-bg-dark); }
+.bg-accent-green { background-color: var(--color-accent-green); }
+.bg-accent-blue { background-color: var(--color-accent-blue); }
+.bg-accent-red { background-color: var(--color-accent-red); }
+.bg-accent-purple { background-color: var(--color-accent-purple); }
+.bg-accent-orange { background-color: var(--color-accent-orange); }
+.bg-accent-yellow { background-color: var(--color-accent-yellow); }
+
+.text-text-primary { color: var(--color-text-primary); }
+.text-text-secondary { color: var(--color-text-secondary); }
+.text-text-muted { color: var(--color-text-muted); }
+.text-accent-green { color: var(--color-accent-green); }
+.text-accent-blue { color: var(--color-accent-blue); }
+.text-accent-red { color: var(--color-accent-red); }
+.text-accent-purple { color: var(--color-accent-purple); }
+.text-accent-orange { color: var(--color-accent-orange); }
+.text-accent-yellow { color: var(--color-accent-yellow); }
+
+.border-bg-border { border-color: var(--color-bg-border); }
+.border-accent-green { border-color: var(--color-accent-green); }
+.border-accent-blue { border-color: var(--color-accent-blue); }
+.border-accent-red { border-color: var(--color-accent-red); }
+
+/* Focus states */
+input:focus, button:focus, a:focus {
+  outline: 2px solid var(--color-accent-green);
+  outline-offset: 2px;
+}
+
+/* Button hover states */
+button:hover {
+  filter: brightness(1.1);
+}
+
+/* Card hover effects */
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(0, 208, 132, 0.1);
+}
