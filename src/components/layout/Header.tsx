@@ -84,12 +84,7 @@ export default function Header({ transparent = false }: HeaderProps) {
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <path d="M24 0L48 24L24 48L0 24L24 0Z" fill="#e42338"/>
-              <path d="M24 8L40 24L24 40L8 24L24 8Z" fill={isTransparent ? '#131b32' : '#0f1527'}/>
-              <text x="50%" y="55%" textAnchor="middle" fill="#fff" fontSize="16" fontWeight="600" fontFamily="Gellix, sans-serif">F</text>
-            </svg>
-            <span className="text-xl font-semibold" style={{ color: isTransparent ? '#fff' : '#fff' }}>FunderPro</span>
+            <img src="/funderpro-logo.png" alt="FunderPro" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
