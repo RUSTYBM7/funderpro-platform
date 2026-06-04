@@ -4,6 +4,9 @@ import { lazy, Suspense } from 'react';
 // Landing page - iframe serving cloned funderpro.com pages
 const FunderproLanding = lazy(() => import('./pages/landing/FunderproLanding'));
 
+// Admin pages
+import AdminRoutes from './pages/admin';
+
 // Auth pages
 import LoginPage from './pages/auth/LoginPage';
 import SignUpPage from './pages/auth/SignUpPage';
@@ -82,6 +85,9 @@ function App() {
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/notifications" element={<NotificationsPage />} />
           <Route path="/support" element={<SupportPage />} />
+
+          {/* Admin pages */}
+          <Route path="/admin/*" element={<AdminRoutes />} />
 
           {/* Fallback to landing */}
           <Route path="*" element={<Navigate to="/" replace />} />

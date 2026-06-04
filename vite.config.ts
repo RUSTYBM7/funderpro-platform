@@ -8,8 +8,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
-      '@supabase/supabase-js': resolve(__dirname, './node_modules/@supabase/supabase-js'),
-      'react-router-dom': resolve(__dirname, './node_modules/react-router/dom'),
     },
   },
 })
