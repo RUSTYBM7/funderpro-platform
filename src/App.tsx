@@ -87,7 +87,7 @@ function App() {
           <Route path="/support" element={<SupportPage />} />
 
           {/* Admin pages */}
-          <Route path="/admin/*" element={<AdminRoutes />} />
+          <Route path="/admin-privacy/*" element={<AdminRoutes />} />
 
           {/* Fallback to landing */}
           <Route path="*" element={<Navigate to="/" replace />} />

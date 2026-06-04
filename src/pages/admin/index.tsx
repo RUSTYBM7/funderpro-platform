@@ -10,7 +10,7 @@ import AdminAnalytics from './AdminAnalytics';
 export default function AdminRoutes() {
   return (
     <Routes>
-      <Route path="/admin" element={<AdminLayout />}>
+      <Route path="/admin-privacy" element={<AdminLayout />}>
         <Route index element={<AdminDashboard />} />
         <Route path="users" element={<UserManagement />} />
         <Route path="transactions" element={<TransactionMonitoring />} />
